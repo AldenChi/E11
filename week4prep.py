@@ -30,7 +30,7 @@ print ("Found PM2.5 sensor, reading data...")
 meta_data=["Time","pm10std", "pm25std","pm100std"]
 import csv
 f=open("data.csv", "w",newline='')
-write=csv.write(f)
+write=csv.writer(f)
 write.writerow(meta_data)
 
 while unix<timr:
