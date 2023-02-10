@@ -23,8 +23,8 @@ uart=serial.Serial("/dev/ttyS0", baudrate=9600,timeout=0.25)
 
 from adafruit_pm25.uart import PM25_UART
 pm25=PM25_UART(uart, reset)
-i2c = busio.I2C(board.SCL, board.SDA, frequency=100000)
-pm25 = PM25_I2C(i2c, reset)
+#i2c = busio.I2C(board.SCL, board.SDA, frequency=100000)
+#pm25 = PM25_I2C(i2c, reset)
 
 print ("Found PM2.5 sensor, reading data...")
 meta_data=["Time","pm10std", "pm25std","pm100std"]
