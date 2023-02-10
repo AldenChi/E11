@@ -37,7 +37,7 @@ while un<timr:
   time.sleep(1)
   un=int(time.time())
   t=time.time()
-  print(time.time)
+  print(t)
   try:
       aqdata=pm25.read()
       print(aqdata)
