@@ -33,9 +33,9 @@ f=open("data.csv", "w",newline='')
 write=csv.writer(f)
 write.writerow(meta_data)
 
-while unix<timr:
+while un<timr:
   time.sleep(1)
-  unix=int(time.time())
+  un=int(time.time())
   t=time.time()
   print(time.time)
   try:
