@@ -32,6 +32,7 @@ import csv
 f=open("data.csv", "w",newline='')
 write=csv.writer(f)
 write.writerow(meta_data)
+print(metadata)
 
 while un<timr:
   time.sleep(1)
