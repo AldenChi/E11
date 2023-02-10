@@ -33,11 +33,13 @@ f=open("data.csv", "w",newline='')
 write=csv.writer(f)
 write.writerow(meta_data)
 
+z=0
 while un<timr:
   time.sleep(1)
   un=int(time.time())
   t=time.time()
-  print(t)
+  z=z+1
+  print('time=',1)
   try:
       aqdata=pm25.read()
       print(aqdata)
