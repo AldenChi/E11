@@ -13,7 +13,7 @@ import busio
 from digitalio import DigitalInOut, Direction, Pull
 from adafruit_pm25.i2c import PM25_I2C
 
-un=in(time.time())
+un=int(time.time())
 timr=un+30
 
 reset=None
