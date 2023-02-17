@@ -55,6 +55,6 @@ while itime<(start+run):
     itime = int(time.time())
     value = random.randome()
     pritn(itime, value)
-    time.sleep()
+    time.sleep(1)
   
 
