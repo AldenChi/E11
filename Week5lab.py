@@ -53,8 +53,8 @@ itime=start
 
 while itime<(start+run):
     itime = int(time.time())
-    value = random.randome()
-    pritn(itime, value)
+    value = random.random()
+    print(itime, value)
     time.sleep(1)
   
 
