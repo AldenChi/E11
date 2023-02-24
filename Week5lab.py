@@ -32,9 +32,9 @@ writer.writerow(meta_data)
 print(sys.argv)
 start=int(time.time())
 run=int(sys.argv[1])
-itime=start+run+300
+itime=start
 
-while itime>(start+run):
+while itime<(start+run):
     time.sleep(1)
     try:
         itime = time.time()
