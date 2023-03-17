@@ -33,7 +33,9 @@ writer.writerow(meta_data)
 while ctime < curtime+rtime:
     ctime = int(time.time())
     try:
-        count = 0
+        global count
+        count=count
+        
         time.sleep(60)
         print("Counts this minute:", count)
     except KeyboardInterrupt:
