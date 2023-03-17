@@ -5,7 +5,7 @@ import csv
 import sys
 import argparse
 
-rtime = int(sys.argv[1])
+rtime = int(sys.argv[0])
 curtime = int(time.time())
 ctime = int(time.time())
 
