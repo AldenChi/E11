@@ -18,9 +18,10 @@ count = 0
 
 # callback
 def count_pulse(channel):
-    global count
-    count += 1
-    print(time.time())
+    if GPIO.input(26)
+        global count
+        count += 1
+        print(time.time())
 
 # callback function
 GPIO.add_event_detect(26, GPIO.FALLING, callback=count_pulse)
@@ -33,7 +34,7 @@ writer.writerow(meta_data)
 while ctime < curtime+rtime:
     ctime = int(time.time())
     try:
-        global count
+
         count=count
         
         time.sleep(60)
