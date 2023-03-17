@@ -18,7 +18,7 @@ count = 0
 
 # callback
 def count_pulse(channel):
-    if GPIO.input(26)
+    if GPIO.input(26):
         global count
         count += 1
         print(time.time())
