@@ -5,7 +5,7 @@ import csv
 import sys
 import argparse
 
-rtime = len(sys.argv[0])
+rtime = int(120)
 curtime = int(time.time())
 ctime = int(time.time())
 
@@ -33,10 +33,14 @@ writer.writerow(meta_data)
 while ctime < curtime+rtime:
     curtime=int(curtime)
     ctime = int(time.time())
+    tetime=0
     try:
         count = 0
-        time.sleep(60)
+        time.sleep(10)
         print("Counts this minute:", count)
+        tetime=tetime+10
+        data = [tetime,count]
+        writer.writerow(data)
     except KeyboardInterrupt:
         # Clean up GPIO 
         GPIO.cleanup()
