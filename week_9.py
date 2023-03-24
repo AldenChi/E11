@@ -26,7 +26,7 @@ def count_pulse(channel):
 GPIO.add_event_detect(26, GPIO.FALLING, callback=count_pulse)
 
 meta_data = ["Time","Count"]
-f = open("2W_radiation_count.csv","w",newline = '')
+f = open("3W_radiation_count.csv","w",newline = '')
 writer = csv.writer(f)
 writer.writerow(meta_data)
 
