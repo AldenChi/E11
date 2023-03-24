@@ -37,7 +37,7 @@ while ctime < curtime+rtime:
     try:
         count = 0
         time.sleep(10)
-        print("Counts this minute:", count)
+        print("Counts in 10 seconds:", count)
         tetime=tetime+10
         data = [tetime,count]
         writer.writerow(data)
