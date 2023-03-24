@@ -30,10 +30,10 @@ f = open("radiation_count.csv","w",newline = '')
 writer = csv.writer(f)
 writer.writerow(meta_data)
 
+tetime=0
 while ctime < curtime+rtime:
     curtime=int(curtime)
     ctime = int(time.time())
-    tetime=0
     try:
         count = 0
         time.sleep(10)
