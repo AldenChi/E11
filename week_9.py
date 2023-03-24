@@ -18,10 +18,9 @@ count = 0
 
 # callback
 def count_pulse(channel):
-    if GPIO.input(26):
-        global count
-        count += 1
-        print(time.time())
+    global count
+    count += 1
+    print(time.time())
 
 # callback function
 GPIO.add_event_detect(26, GPIO.FALLING, callback=count_pulse)
@@ -32,12 +31,9 @@ writer = csv.writer(f)
 writer.writerow(meta_data)
 
 while ctime < curtime+rtime:
+    curtime=int(curtime)
     ctime = int(time.time())
     try:
-
-        count=count
-        
-        time.sleep(60)
         print("Counts this minute:", count)
     except KeyboardInterrupt:
         # Clean up GPIO 
