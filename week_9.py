@@ -39,7 +39,7 @@ while ctime < curtime+rtime:
     except KeyboardInterrupt:
         # Clean up GPIO 
         GPIO.cleanup()
-    data = [time.time(),count]
-    writer.writerow(data)
+        data = [time.time(),count]
+        writer.writerow(data)
 print("Counts this minute:", count) 
 f.close()
