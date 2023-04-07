@@ -23,7 +23,7 @@ def count_pulse(channel):
     print(time.time())
 
 # callback function
-GPIO.add_event_detect(26, GPIO.FALLING, callback=count_pulse)
+GPIO.add_event_detect(17, GPIO.FALLING, callback=count_pulse)
 
 meta_data = ["Time","Count"]
 f = open("test.csv","w",newline = '')
